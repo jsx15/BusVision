@@ -46,7 +46,7 @@ public class CarController : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            throttle = 1;
+            throttle = 2;
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -56,7 +56,6 @@ public class CarController : MonoBehaviour
         {
             steerAng = 1;
         }
-        
         float motor = maxMotorTorque * throttle;
         float steering = maxSteeringAngle * steerAng;
 
